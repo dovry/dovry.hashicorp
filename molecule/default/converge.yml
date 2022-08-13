@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: "Include dovry.hashicorp"
+      ansible.builtin.include_role:
+        name: "dovry.hashicorp"
